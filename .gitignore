@@ -137,3 +137,13 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+Lab Practice/.DS_Store
+Lab Practice/Lab 4 CSS Layouts/Startup Code/Part A/.DS_Store
+Lab Practice/Lab 4 CSS Layouts/Startup Code/.DS_Store
+Lab Practice/Lab 4 CSS Layouts/.DS_Store
+.DS_Store
+Lab Practice/.DS_Store
+Lab Practice/Lab 4 CSS Layouts/.DS_Store
+
+# VS Code settings
+.vscode/

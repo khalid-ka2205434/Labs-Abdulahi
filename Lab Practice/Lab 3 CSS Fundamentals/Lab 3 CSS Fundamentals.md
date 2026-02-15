@@ -1,7 +1,7 @@
 <p align="center">
 <strong>Qatar University</strong><br>
 College of Engineering - Department of Computer Science and Engineering<br>
-<strong>CMPS 356 - Web Development Fundamentals</strong>
+<strong>CMPS 350 - Web Development Fundamentals</strong>
 </p>
 
 ---
@@ -11,6 +11,8 @@ College of Engineering - Department of Computer Science and Engineering<br>
 # Dashboard Styling - Transform Your Finance Dashboard
 
 **Duration:** 120 minutes
+**Theme:** Personal Finance Platform - Part 3 of 11
+**Prerequisites:** Labs 1 and 2 completed
 
 ---
 
@@ -169,10 +171,10 @@ p {
 
 **Self-Check:**
 
-- [ ] CSS file is linked in the HTML head
-- [ ] Background color changes to light gray
-- [ ] Heading and paragraph colors change
-- [ ] No errors in browser console
+- [X] CSS file is linked in the HTML head
+- [X] Background color changes to light gray
+- [X] Heading and paragraph colors change
+- [X] No errors in browser console
 
 ---
 
@@ -280,9 +282,9 @@ nav a {
 
 **Self-Check:**
 
-- [ ] Title has specific color and size from ID selector
-- [ ] Introduction paragraph is italic from class selector
-- [ ] Navigation links are blue without underlines
+- [X] Title has specific color and size from ID selector
+- [X] Introduction paragraph is italic from class selector
+- [X] Navigation links are blue without underlines
 
 ---
 
@@ -492,10 +494,10 @@ a {
 
 **Self-Check:**
 
-- [ ] Body text uses custom font family
-- [ ] Headings use primary color
-- [ ] Links use secondary color
-- [ ] Background uses background color variable
+- [X] Body text uses custom font family
+- [X] Headings use primary color
+- [X] Links use secondary color
+- [X] Background uses background color variable
 
 ---
 
@@ -592,10 +594,10 @@ Add these elements and styles:
 
 **Self-Check:**
 
-- [ ] Hero section has gradient background
-- [ ] Feature card has accent border on left
-- [ ] Both have rounded corners
-- [ ] Colors are visually appealing
+- [X] Hero section has gradient background
+- [X] Feature card has accent border on left
+- [X] Both have rounded corners
+- [X] Colors are visually appealing
 
 ---
 
@@ -720,10 +722,10 @@ Create a button with hover effects:
 
 **Self-Check:**
 
-- [ ] Buttons change color on hover
-- [ ] Primary button lifts up slightly on hover
-- [ ] Transitions are smooth (not instant)
-- [ ] Focus state is visible when tabbing
+- [X] Buttons change color on hover
+- [X] Primary button lifts up slightly on hover
+- [X] Transitions are smooth (not instant)
+- [X] Focus state is visible when tabbing
 
 ---
 
@@ -731,12 +733,12 @@ Create a button with hover effects:
 
 Congratulations! You've now practiced all the fundamental CSS concepts:
 
-- [ ] CSS syntax and linking stylesheets
-- [ ] Selectors (element, class, id, descendant)
-- [ ] Box model (margin, padding, border)
-- [ ] Colors and typography
-- [ ] Backgrounds and borders
-- [ ] Pseudo-classes and shadows
+- [X] CSS syntax and linking stylesheets
+- [X] Selectors (element, class, id, descendant)
+- [X] Box model (margin, padding, border)
+- [X] Colors and typography
+- [X] Backgrounds and borders
+- [X] Pseudo-classes and shadows
 
 **Save your `practice.css` file** - reference it while styling your dashboard!
 
@@ -757,8 +759,16 @@ This lets you concentrate on learning CSS properties and techniques without worr
 
 ### Visual Mockup
 
-See the complete design in: `screenshots/styled-dashboard.png`
-See the color scheme in: `screenshots/color-palette.png`
+Your finished pages should look like these full-page screenshots:
+
+| Page                   | Screenshot                            |
+| ---------------------- | ------------------------------------- |
+| Dashboard (index.html) | `screenshots/dashboard.png`         |
+| Budget Tracker         | `screenshots/budget-tracker.png`    |
+| Goal Planner           | `screenshots/goal-planner.png`      |
+| Account Application    | `screenshots/apply-for-account.png` |
+
+<img src="screenshots/dashboard.png" alt="Styled Dashboard - Full Page" width="400">
 
 ### Project Requirements
 
@@ -934,7 +944,7 @@ Create consistent heading hierarchy and text styles.
 - Paragraph: 1rem, text-secondary for muted text
 - Strong amounts in cards: larger font size, bold
 
-**See screenshot:** `screenshots/typography.png`
+**See screenshot:** `screenshots/dashboard.png` — observe the heading hierarchy (h1 in the header, h2 section titles, h3 card labels) and body text throughout the page
 
 ---
 
@@ -952,7 +962,7 @@ Create a professional header with logo and branding.
 - Title: Primary color, appropriate size
 - Tagline: Muted text, smaller size
 
-**See screenshot:** `screenshots/header-styled.png`
+**See screenshot:** `screenshots/dashboard.png` — look at the top of the page: the white header area with the title and tagline
 
 ---
 
@@ -971,7 +981,7 @@ Create a horizontal navigation bar with interactive states.
 - No underlines on links
 - Spacing between links
 
-**See screenshot:** `screenshots/navigation-styled.png`
+**See screenshot:** `screenshots/dashboard.png` — look at the dark navigation bar just below the header with Dashboard, Budget Tracker, Goal Planner, and Apply for Account links
 
 ---
 
@@ -991,7 +1001,7 @@ Create card components for the financial metrics.
 - Amount text: Large, bold, colored based on type (green for positive)
 - Label text: Smaller, muted
 
-**See screenshot:** `screenshots/cards-styled.png`
+**See screenshot:** `screenshots/dashboard.png` — look at the "Financial Overview" section with the four metric cards (Total Balance, Monthly Income, Monthly Expenses, Savings Rate)
 
 ---
 
@@ -1012,7 +1022,7 @@ Create professional, readable data tables.
 - Caption styling: Left-aligned, muted
 - Status column: Colored badges (green for active, etc.)
 
-**See screenshot:** `screenshots/tables-styled.png`
+**See screenshot:** `screenshots/dashboard.png` — look at the "My Accounts" and "Recent Transactions" tables with dark headers, zebra striping, and colored status text
 
 ---
 
@@ -1031,7 +1041,7 @@ Create consistent form controls across all form pages.
 - Buttons: Primary and secondary styles with hover
 - Help text: Small, muted color
 
-**See screenshot:** `screenshots/forms-styled.png`
+**See screenshot:** `screenshots/budget-tracker.png` — look at the "Add New Transaction" form with styled inputs, select dropdown, radio buttons, and submit/reset buttons
 
 ---
 
@@ -1049,7 +1059,7 @@ Create a visually distinct aside section.
 - Links: Consistent with site theme
 - Subsection headings: Clear hierarchy
 
-**See screenshot:** `screenshots/sidebar-styled.png`
+**See screenshot:** `screenshots/dashboard.png` — look at the "Quick Tips" aside section near the bottom with the green top border, tip lists, and resource links
 
 ---
 
@@ -1067,7 +1077,7 @@ Create a professional footer.
 - Copyright: Smaller, muted
 - Center alignment or justified
 
-**See screenshot:** `screenshots/footer-styled.png`
+**See screenshot:** `screenshots/dashboard.png` — look at the dark footer at the very bottom with white text, links, and the copyright notice
 
 ---
 
@@ -1284,6 +1294,19 @@ You'll make your dashboard mobile-friendly using Flexbox, CSS Grid, and media qu
 
 **Lab 5-7: JavaScript**
 Add interactivity - calculate budgets in real-time, validate forms client-side, and create interactive charts.
+
+---
+
+## Need Help?
+
+- **During lab:** Ask your instructor for assistance
+- **Office hours (Tuesdays):**
+  - **Female students:** 11:00 AM - 12:00 PM | Office H07-C393
+  - **Male students:** 1:00 PM - 2:00 PM | Success Oasis Room, H07
+- **MS Teams:** Ask questions anytime, access recorded tutorial sessions, and participate in Q&A discussions
+- **Instructor:** Abdulahi Hassen
+
+---
 
 **Congratulations on completing Lab 3!**
 

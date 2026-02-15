@@ -1,7 +1,7 @@
 <p align="center">
 <strong>Qatar University</strong><br>
 College of Engineering - Department of Computer Science and Engineering<br>
-<strong>CMPS 356 - Web Development Fundamentals</strong>
+<strong>CMPS 350 - Web Development Fundamentals</strong>
 </p>
 
 ---
