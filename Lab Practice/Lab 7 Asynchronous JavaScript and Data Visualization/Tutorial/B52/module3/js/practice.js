@@ -27,7 +27,39 @@
 
 // TODO: Add click listener on #load-btn that fetches and displays data
 
+// how to link and interact
 
+const BASE_URL = 'https://myfinance-api-bay.vercel.app/transactions'
+
+const loadBtn = document.querySelector("#load-btn")
+const statusText = document.querySelector("#status")
+const transactionBody = document.querySelector("#transaction-body")
+
+loadBtn.addEventListener('click', loadTransactions)
+
+
+async function loadTransactions() {
+   statusText.textContent = 'Loading transactions .....'
+
+   const response = await fetch(BASE_URL)
+   const transactions = await response.json() //parsing
+
+   // now you transform to table rows
+   transactionBody.innerHTML = transactions.map(t => transToHTMLRow(t)).join('');
+
+   statusText.textContent = `Loaded ${transactions.length} transactions`
+}
+function transToHTMLRow(t) {
+   const amountClass = t.type === "income" ? "text-success" : "text-danger"
+   return `
+      <tr>
+         <td> ${t.description} </td>
+         <td> ${t.category} </td>
+         <td> ${t.type} </td>
+         <td class=${amountClass}> ${t.amount} </td>
+      </tr>
+   `
+}
 
 // ---- Exercise 2: Fetch, Transform, and Summarize ----
 // When #summary-btn is clicked:
@@ -37,4 +69,45 @@
 //   4. Color the balance card green if positive, red if negative
 
 // TODO: Add click listener on #summary-btn
+const summaryCards = document.querySelector("#summary-cards")
+const summaryBtn = document.querySelector("#summary-btn")
 
+// listen to the click event on the button
+
+summaryBtn.addEventListener('click', loadSummary)
+
+async function loadSummary() {
+   const response = await fetch(BASE_URL)
+   const transactions = await response.json() //parsing
+
+   const income = transactions
+      .filter(t => t.type === "income")
+      .reduce((acc, curr) => acc + curr.amount, 0)
+
+   const expense = transactions
+      .filter(t => t.type === "expense")
+      .reduce((acc, curr) => acc + curr.amount, 0)
+
+   const balance = income - expense
+
+   const totalNoOfTransactions = transToHTMLRow.length
+
+   summaryCards.innerHTML = `
+      <div class="card card--success">
+         <h3>Total Income</h3>
+         <p class="amount">${income.toLocaleString()} QAR</p>
+      </div>
+      <div class="card card--success">
+         <h3>Total Expense</h3>
+         <p class="amount">${expense.toLocaleString()} QAR</p>
+      </div>
+      <div class="card card--success">
+         <h3>Balance</h3>
+         <p class="amount">${balance.toLocaleString()} QAR</p>
+      </div>
+      <div class="card card--success">
+         <h3>No of Transaction</h3>
+         <p class="amount">${transactions.length} </p>
+      </div>
+   `
+}

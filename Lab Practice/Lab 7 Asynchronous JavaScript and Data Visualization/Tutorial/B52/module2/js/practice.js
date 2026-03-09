@@ -66,7 +66,7 @@ function simulateApiCall(name, ms) {
 // this will run in the background
 async function displayTransactions() {
     // network calls, read/write to files, crud database operation
-    const results = await loadTransactions(true)
+    const results = await loadTransactions(true) //pause and wait for result
     console.log(results);
 }
 
