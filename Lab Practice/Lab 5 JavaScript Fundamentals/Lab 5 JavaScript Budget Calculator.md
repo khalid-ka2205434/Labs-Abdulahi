@@ -6,7 +6,7 @@ College of Engineering - Department of Computer Science and Engineering<br>
 
 ---
 
-# Lab 5: JavaScript Budget Calculator
+# Lab 5: JavaScript Fundamentals : Budget Calculator
 
 **Duration:** 120 minutes
 **Theme:** Personal Finance Platform - Part 5 of 11
@@ -361,6 +361,7 @@ document.getElementById("form").addEventListener("submit", (e) => {
 Open `Startup Code/Part A/module6/practice.html` in the browser, then edit `js/practice.js`.
 
 **Self-Check:**
+
 - [ ] Does the dashboard update when you add a transaction?
 - [ ] Does the transaction list show all entries?
 - [ ] Does the clear button reset everything?
@@ -384,21 +385,27 @@ Now apply everything you learned to build a working budget calculator independen
 Build the calculator by completing these steps in `js/app.js`:
 
 #### Step 1: Helper Functions
+
 Create `formatCurrency(amount)` and `calcSavingsRate(income, expenses)` functions.
 
 #### Step 2: Data Storage
+
 Create an empty array to store transaction objects.
 
 #### Step 3: Dashboard Update Function
+
 Create `updateDashboard()` that calculates totals from the transactions array using `filter` + `reduce`, then updates the dashboard card elements (`#total-income`, `#total-expenses`, `#total-balance`, `#savings-rate`).
 
 #### Step 4: Render Transactions Function
+
 Create `renderTransactions()` that displays all transactions in the `#transaction-body` table. Handle the empty state and use color to distinguish income from expenses.
 
 #### Step 5: Form Event Listener
+
 Add a submit handler to `#quick-transaction-form` that reads form values, creates a transaction object, adds it to the array, updates the display, and resets the form.
 
 #### Step 6: Clear Button
+
 Add a click handler to `#clear-btn` that empties the array and updates the display.
 
 ### Testing Checklist
@@ -466,19 +473,20 @@ form.addEventListener("submit", (e) => { e.preventDefault(); });
 
 ## Common Mistakes
 
-| Mistake | Fix |
-|---------|-----|
-| Missing `event.preventDefault()` | Form refreshes the page |
-| Using `=` instead of `===` | `=` assigns, `===` compares |
-| Forgetting `Number()` on input values | Input values are strings by default |
-| Calling function without `()` | `updateDashboard` vs `updateDashboard()` |
-| Misspelling element IDs | Check HTML for exact ID names |
+| Mistake                                 | Fix                                          |
+| --------------------------------------- | -------------------------------------------- |
+| Missing `event.preventDefault()`      | Form refreshes the page                      |
+| Using `=` instead of `===`          | `=` assigns, `===` compares              |
+| Forgetting `Number()` on input values | Input values are strings by default          |
+| Calling function without `()`         | `updateDashboard` vs `updateDashboard()` |
+| Misspelling element IDs                 | Check HTML for exact ID names                |
 
 ---
 
 ## Submission
 
 Submit the following:
+
 - Practice files from Part A (module1-6)
 - Part B with working budget calculator (`js/app.js`)
 
@@ -496,6 +504,7 @@ Submit the following:
 ## What's Next?
 
 In **Lab 6: Account Manager**, you'll learn:
+
 - JavaScript classes and objects
 - OOP (Object-Oriented Programming)
 - localStorage for data persistence
