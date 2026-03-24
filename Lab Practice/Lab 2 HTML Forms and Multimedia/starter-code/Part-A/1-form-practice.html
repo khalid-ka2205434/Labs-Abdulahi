@@ -21,6 +21,55 @@
              - All required, submit + reset buttons -->
         <section>
             <h2>Module 1: Contact Form</h2>
+            <from action="#" method="post">
+             <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+             </div>
+
+            <div>
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+            <label for="gender">Gender</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            </div>
+
+            <div>
+            <label for="dob">DOB</label>
+            <input type="date">
+            </div>
+
+            <div>
+            <label for="income">What is your income Range</label>
+            <input type="range" min="1000" max="100000">
+            <output>10000</output>
+            </div>
+
+        <div>
+        <label for="hobby">Hobby</label>
+        <input
+            type="text"
+            list="hobby"
+            name="hobby"
+            placeholder="Select your hobby"
+        >
+
+        <datalist id="hobby">
+            <option value="Football">
+            <option value="Basketball">
+            <option value="Swimming">
+        </datalist>
+        </div>
+
+          <input type="submit">
+          <input type="reset">
+            </from>
 
             <form action="#">
 
