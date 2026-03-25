@@ -1,1 +1,0 @@
- { description: "New Shoes", amount: 380, type: "expense", category: "Shopping" }
